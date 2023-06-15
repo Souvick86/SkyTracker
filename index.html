@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Weather-true</title>
+
+</head>
+
+<body class="flex">
+    <div class="headerAndMainContainer">
+        <header class="border-bottom weatherHeader">
+            <div class="weatherDiv flex">
+                <a href="/"
+                    class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <span>SkyTracker</span>
+                </a>
+
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="px-3 max-width weatherMain flex">
+            <h1 class="city">Weather in Kolkata</h1>
+
+            <div class="row mainCard flex">
+                <div class="col-md-6 mainCards weatherCard1">
+                    <div class="text-white rounded-3 flex weatherCard1-1">
+                        <div class="weatherCard1-1-1">
+                            <h1 class="temp"></h1>
+                            <p class="feels_like"></p>
+                        </div>
+                        <div class="weatherCard1-1-2">
+                            <p><span class="icon1"><ion-icon name="location-outline"></ion-icon></span></p>
+                            <p><span class="icon2"><ion-icon
+                                        name="calendar-clear-outline"></ion-icon></ion-icon></span><span
+                                    class="datetime"></span> | <span class="date"></span></p>
+                        </div>
+                        <div class="weatherCard1-1-3">
+                            <div class="flex weatherType">
+                                <h2 class="weatherDesc">hello</h2>
+                                <img src="https://openweathermap.org/img/wn/50d@2x.png" alt="haze" class="weatherImage">
+                            </div>
+                            <p class="humidity">Humidity: </p>
+                            <p class="pressure">Pressure: </p>
+                            <p class="windspeed">Wind Speed:</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mainCards flex weatherCard2">
+                    <div class="container2">
+                        <input type="text" id="textInput" name="text" required>
+                        <span>City Name</span>
+                        <i></i>
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
+                    <div>
+                        <img src="" alt="" class="newImages">
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <dialog class="dialog">
+        <p class="addErrorMessage">anything that you would want me to talk about lorem</p>
+        <button class="closeModal">Close</button>
+    </dialog>
+
+    <div class="containerAc">
+        <div class="about">
+            <ul class="about-ul">
+                <li id="About" class="about-li">
+                    <h3>About</h3>
+                    <p>Our Weather App, brings you the latest weather updates with
+                        ease. Access current weather data for over 200,000 cities worldwide simply by entering the city
+                        name. With a user-friendly interface and reliable data accuracy ranging from 90% to 100%, our
+                        app ensures you stay prepared for any weather conditions. Experience the simplicity and
+                        convenience of the app, providing comprehensive weather information at your
+                        fingertips.</p>
+                </li>
+                <li id="Contact" class="about-li">
+                    <h3>Contact</h3>
+                    <p>
+                        For more information or questions please <a id="a-tag" class="taga1"
+                            href="https://media0.giphy.com/media/4N5vB4aErlVtVsywBw/giphy.gif"><strong>Join Our
+                                Discord</strong></a>
+                        and
+                        ask questions in our <span class="tag-a1">#</span>support
+                        chatrooms.
+                        <br>
+                        Email query: <span class="taga1"><strong>696969@gmail.com</strong></span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+
+    <footer class="weatherFooter">
+        <p>© 2023 SkyTracker. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
